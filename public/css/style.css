@@ -56,14 +56,31 @@ p {
 .btn {
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 12px;
-    font-weight: bold;
-    transition: opacity 0.2s;
+    padding: 12px 24px; /* 更大的点击区域 */
+    border-radius: 50px; /* 更圆润 */
+    font-size: 14px;
+    font-weight: 600;
+    
+    /* 让图标和文字对齐 */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* 图标和文字的间距 */
+    
+    /* 柔和的阴影 */
+    box-shadow: 0 4px 10px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* 平滑过渡动画 */
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.btn-github { background-color: #333; }
-.btn-email { background-color: #007bff; }
+/* 鼠标悬停动效：上浮 + 变亮 + 阴影加深 */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    filter: brightness(1.1);
+}
 
-.btn:hover { opacity: 0.8; }
+/* 各个按钮的颜色 */
+.btn-github { background-color: #24292e; }
+.btn-email { background-color: #007bff; }
+.btn-about { background-color: #28a745; }
+.btn-guestbook { background-color: #ff9f43; }
