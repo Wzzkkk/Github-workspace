@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Message; // 引入刚才建的模型
+use App\Models\Message;
 
 class MessageController extends Controller
 {
-    // 1. 显示留言板页面
+    // 显示留言板
     public function index()
     {
         // 获取所有留言，最新的排前面
@@ -15,7 +15,7 @@ class MessageController extends Controller
         return view('guestbook', ['messages' => $messages]);
     }
 
-    // 2. 处理提交的留言
+    // 处理提交的留言
     public function store(Request $request)
     {
         // 验证输入：名字必填且不超50字，内容必填

@@ -21,7 +21,8 @@
         <div class="social-links">
             <a href="https://github.com/Wzzkkk" target="_blank" class="btn btn-github">GitHub</a>
             <a href="mailto:admin@zwk369.me" class="btn btn-email">Email</a>
-             <a href="/about" class="btn" style="background-color: #28a745;">关于我</a>
+            <a href="/about" class="btn" style="background-color: #28a745;">关于我</a>
+            <a href="/guestbook" class="btn" style="background-color: #ff9f43;">留言板</a>
         </div>
 
     </div>
