@@ -3,33 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 { color: #2d3748; }
-        p { color: #718096; }
-    </style>
+    <title>Wzzkkk 的个人主页</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello from Local!</h1>
-        <p>这是我在自己电脑上修改并推送到服务器的页面。</p>
-        <p>开发流程：本地 VS Code -> GitHub -> VPS 服务器</p>
+
+    <div class="profile-card">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="头像" class="avatar">
+        
+        <h1>Wzzkkk</h1>
+        <p>全栈开发者 / 超级无敌ZZZ</p>
+        <p>这是魏的个人网站，运行在 Ubuntu VPS 上。</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/Wzzkkk" target="_blank" class="btn btn-github">GitHub</a>
+            <a href="mailto:admin@zwk369.me" class="btn btn-email">Email</a>
+        </div>
     </div>
+
 </body>
 </html>
