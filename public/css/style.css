@@ -13,10 +13,14 @@ body {
 
 .profile-card {
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 50px; /* 稍微增加点内边距，显大 */
     border-radius: 20px;
     text-align: center;
-    width: 300px;
+    
+    /* ✅ 修改这里：让卡片变宽 */
+    width: 700px; 
+    max-width: 95%; /* 手机上自动缩窄，防止撑爆屏幕 */
+    
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
@@ -47,12 +51,30 @@ p {
 }
 
 .social-links {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    
+    /* ✅ 修改这里：重复4次，即1行4列 */
+    grid-template-columns: repeat(4, 1fr); 
+    
     gap: 15px;
+    margin-top: 35px;
+    width: 100%;
 }
 
+/* 确保按钮里的文字和图标居中 */
+.social-links .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 0; /* 调整内边距，防止文字换行 */
+}
+
+/* 微调：卡片整体内边距，让上下更平衡 */
+.profile-card {
+    /* 如果你之前有 padding，可以用这个覆盖，增加底部留白 */
+    padding: 40px 30px 50px 30px;
+}
+
+/* 按钮的基础样式 */
 .btn {
     text-decoration: none;
     color: white;
