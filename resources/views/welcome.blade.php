@@ -11,7 +11,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-	</head>
+	<style>
+        /* 1. 强制让联系方式变成弹性盒子，横向排列 */
+        .contact-method {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important; /* 垂直居中 */
+            padding-left: 0 !important;
+            margin-bottom: 30px !important;
+            border: none !important;
+        }
+
+        /* 2. 强制把图标“按”在原地，不让它乱飘 */
+        .contact-method .icon {
+            position: static !important; /* 关键：取消绝对定位 */
+            margin-right: 20px !important; /* 给右边留空隙 */
+            
+            width: 48px !important;
+            height: 48px !important;
+            line-height: 48px !important;
+            text-align: center !important;
+            font-size: 1.2em !important;
+            
+            background-color: #ffffff !important;
+            color: #242943 !important;
+            border-radius: 50% !important;
+            flex-shrink: 0 !important; /* 禁止被压扁 */
+            
+            /* 重置可能残留的定位属性 */
+            left: auto !important;
+            top: auto !important;
+        }
+
+        /* 3. 整理文字区域 */
+        .contact-method > div {
+            text-align: left !important;
+            flex: 1 !important;
+        }
+        
+        .contact-method h3 {
+            margin-bottom: 5px !important;
+            color: #ffffff !important;
+        }
+        
+        .contact-method a, .contact-method span {
+            color: rgba(255,255,255,0.7) !important;
+            display: block !important;
+            line-height: 1.5 !important;
+        }
+    </style>
+    </head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
