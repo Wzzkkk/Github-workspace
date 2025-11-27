@@ -43,13 +43,13 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Hi, my name is Forty</h1>
+								<h1>Hi, 我是 Wzzkkk</h1>
 							</header>
 							<div class="content">
-								<p>A responsive site template designed by HTML5 UP<br />
-								and released under the Creative Commons.</p>
+								<p>全栈开发者 / Laravel 爱好者<br />
+                                这是我的个人网站，运行在 Ubuntu VPS 上。</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+									<li><a href="#one" class="button next scrolly">开始探索</a></li>
 								</ul>
 							</div>
 						</div>
@@ -65,8 +65,8 @@
 										<img src="/images/pic01.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
+										<h3><a href="landing.html" class="link">关于我</a></h3>
+										<p>了解我的技术栈与个人经历</p>
 									</header>
 								</article>
 								<article>
@@ -74,8 +74,8 @@
 										<img src="/images/pic02.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
+										<h3><a href="landing.html" class="link">留言板</a></h3>
+										<p>欢迎留下你的足迹</p>
 									</header>
 								</article>
 								<article>
@@ -161,14 +161,14 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
+										<span class="icon brands alt fa-github"></span>
+										<h3>GitHub</h3>
+										<a href="https://github.com/Wzzkkk">Wzzkkk</a>
 									</div>
 								</section>
 								<section>
