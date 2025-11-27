@@ -23,6 +23,11 @@
                 <li><a href="/">首页</a></li>
                 <li><a href="/about">关于我</a></li>
                 <li><a href="/guestbook">留言板</a></li>
+                @if(session('is_admin'))
+                <li><a href="/logout">退出登录</a></li>
+                @else
+                <li><a href="/login" style="font-size: 0.8em; opacity: 0.5;">管理员入口</a></li>
+                @endif
             </ul>
         </nav>
 
@@ -71,7 +76,16 @@
                                         <tr>
                                             <td>{{ $msg->name }}</td>
                                             <td>{{ $msg->content }}</td>
-                                            <td style="font-size: 0.8em; color: #888;">{{ $msg->created_at->diffForHumans() }}</td>
+                                            <td>
+                                                <span style="font-size: 0.8em; color: #888;">{{ $msg->created_at->diffForHumans() }}</span>
+        
+                                                @if(session('is_admin'))
+                                                    <form action="/guestbook/{{ $msg->id }}" method="POST" style="display:inline; margin-left: 10px;">
+                                                        @csrf
+                                                        @method('DELETE') <button type="submit" style="font-size: 0.7em; padding: 0 10px; height: 30px; line-height: 30px; background-color: #e74c3c; border: none;">删除</button>
+                                                    </form>
+                                                @endif
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>

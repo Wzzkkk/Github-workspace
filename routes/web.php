@@ -23,3 +23,38 @@ use App\Http\Controllers\DeployController;
 
 // 自动化部署接口
 Route::post('/deploy-webhook', [DeployController::class, 'deploy']);
+
+
+
+// 管理员登录页面
+Route::get('/login', [MessageController::class, 'showLogin']);
+// 提交登录密码
+Route::post('/login', [MessageController::class, 'verifyLogin']);
+// 退出登录
+Route::get('/logout', [MessageController::class, 'logout']);
+
+// 删除留言 (注意这里用了 {id} 来代表要删哪一条)
+Route::delete('/guestbook/{id}', [MessageController::class, 'destroy']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
