@@ -170,19 +170,8 @@
                                 </div>
                         </section>
                         </section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-
+                        </div>
+                </section>
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
