@@ -13,7 +13,6 @@ class MessageController extends Controller
         $messages = Message::latest()->get();
         return view('guestbook', ['messages' => $messages]);
     }
-
     // 保存留言
     public function store(Request $request)
     {
@@ -22,7 +21,9 @@ class MessageController extends Controller
             'content' => 'required|max:200',
         ]);
         Message::create($request->only('name', 'content'));
-        return back();
+
+        // ✅ 修改这里：跳转到留言板，并携带成功信息
+        return redirect('/guestbook')->with('success', '留言提交成功！感谢你的分享 🚀');
     }
 
     // === 下面是新增的管理员功能 ===

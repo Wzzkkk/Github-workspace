@@ -38,6 +38,13 @@
                     <header class="major">
                         <h1>💬 留言板</h1>
                     </header>
+
+                    @if(session('success'))
+                        <div style="background: #28a745; color: white; padding: 15px; border-radius: 4px; margin-bottom: 30px; border-left: 5px solid #1e7e34; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                            <i class="fas fa-check-circle" style="margin-right: 8px;"></i> 
+                            {{ session('success') }}
+                        </div>
+                    @endif
                     
                     <div class="row gtr-200">
                         <div class="col-6 col-12-medium">
