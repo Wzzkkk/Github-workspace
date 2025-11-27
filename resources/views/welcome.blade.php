@@ -135,42 +135,40 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
+								<form method="post" action="/guestbook">
+                                    <div class="fields">
+                                        <div class="field">
+                                            <label for="name">你的名字</label>
+                                            <input type="text" name="name" id="name" required />
+                                        </div>
+                                    <div class="field">
+                                        <label for="message">你想说的话</label>
+                                        <textarea name="content" id="message" rows="6" required></textarea>
+                                    </div>
+                                    </div>
+                                    <ul class="actions">
+                                    <li><input type="submit" value="提交留言" class="primary" /></li>
+                                    <li><input type="reset" value="清空" /></li>
+                                    </ul>
+                                </form>         
 							</section>
 							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon brands alt fa-github"></span>
-										<h3>GitHub</h3>
-										<a href="https://github.com/Wzzkkk">Wzzkkk</a>
-									</div>
-								</section>
+                        <section>
+                            <div class="contact-method">
+                                <span class="icon solid alt fa-envelope"></span>
+                                <h3>Email</h3>
+                                <a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
+                            </div>
+                        </section>
+                        <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-home"></span>
+                                    <h3>关于本站</h3>
+                                    <span>这是一个使用 Laravel + Forty 模板<br />
+                                                        构建的全栈个人网站。</span>
+                                </div>
+                        </section>
+                        </section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-home"></span>
