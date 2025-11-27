@@ -43,7 +43,7 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Hi, 我是 Wzzkkk</h1>
+								<h1>hello, 我是 Wzzkkk</h1>
 							</header>
 							<div class="content">
 								<p>全栈开发者 / Laravel 爱好者<br />
