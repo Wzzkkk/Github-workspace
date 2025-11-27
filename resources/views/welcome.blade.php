@@ -154,24 +154,26 @@
                                 </form>         
 							</section>
 							<section class="split">
-                        <section>
-                            <div class="contact-method">
-                                <span class="icon solid alt fa-envelope"></span>
-                                <h3>Email</h3>
-                                <a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
-                            </div>
-                        </section>
-                        <section>
+                            <section>
+                                <div class="contact-method">
+                                    <span class="icon solid alt fa-envelope"></span>
+                                    <div>
+                                        <h3>Email</h3>
+                                        <a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
                                 <div class="contact-method">
                                     <span class="icon solid alt fa-home"></span>
+                                    <div>
                                     <h3>关于本站</h3>
                                     <span>这是一个使用 Laravel + Forty 模板<br />
-                                                        构建的全栈个人网站。</span>
+                                    构建的全栈个人网站。</span>
+                                    </div>
                                 </div>
+                            </section>
                         </section>
-                        </section>
-                        </div>
-                </section>
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
