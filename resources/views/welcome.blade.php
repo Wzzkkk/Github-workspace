@@ -12,20 +12,20 @@
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	<style>
-        /* 1. 强制让联系方式变成弹性盒子，横向排列 */
+        /* 1. 布局修复：顶部对齐 */
         .contact-method {
             display: flex !important;
             flex-direction: row !important;
-            align-items: center !important; /* 垂直居中 */
+            align-items: flex-start !important; /* ✅ 关键修复：让房子图标停在顶部，不要居中挡路 */
             padding-left: 0 !important;
-            margin-bottom: 30px !important;
+            margin-bottom: 40px !important;
             border: none !important;
         }
 
-        /* 2. 强制把图标“按”在原地，不让它乱飘 */
+        /* 2. 左侧大图标 (房子/信封) */
         .contact-method .icon {
-            position: static !important; /* 关键：取消绝对定位 */
-            margin-right: 20px !important; /* 给右边留空隙 */
+            position: static !important;
+            margin-right: 20px !important;
             
             width: 48px !important;
             height: 48px !important;
@@ -36,14 +36,13 @@
             background-color: #ffffff !important;
             color: #242943 !important;
             border-radius: 50% !important;
-            flex-shrink: 0 !important; /* 禁止被压扁 */
+            flex-shrink: 0 !important;
             
-            /* 重置可能残留的定位属性 */
-            left: auto !important;
-            top: auto !important;
+            /* 稍微往下一点点，对齐第一行文字 */
+            margin-top: 5px !important; 
         }
 
-        /* 3. 整理文字区域 */
+        /* 3. 右侧内容区域 */
         .contact-method > div {
             text-align: left !important;
             flex: 1 !important;
@@ -59,28 +58,36 @@
             display: block !important;
             line-height: 1.5 !important;
         }
-        /* ✅ 新增：让搬家后的图标排版更漂亮 */
+
+        /* 4. ✅ 新增：修复社交小图标排版 */
         .contact-method .icons {
-            margin-top: 20px !important;  /* 和上面文字拉开距离 */
-            padding-left: 0 !important;   /* 去掉左边距 */
-            list-style: none !important;  /* 去掉前面的点 */
-            display: flex !important;     /* 横向排列 */
-            flex-wrap: wrap !important;   /* 自动换行 */
-            gap: 10px !important;         /* 图标之间的间距 */
+            margin: 15px 0 0 0 !important; /* 和上面文字拉开距离 */
+            padding: 0 !important;
+            list-style: none !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 10px !important; /* 图标间距 */
         }
-        
+
         .contact-method .icons li {
             padding: 0 !important;
+            margin: 0 !important;
             border: none !important;
         }
-        
-        /* 稍微缩小一点图标，适应紧凑布局 */
+
+        /* 社交图标样式 */
         .contact-method .icons .icon {
-            width: 36px !important;
-            height: 36px !important;
-            line-height: 36px !important;
-            font-size: 1em !important;
-            margin-right: 0 !important; /* 由 gap 控制间距 */
+            width: 32px !important;
+            height: 32px !important;
+            line-height: 32px !important;
+            font-size: 0.9em !important;
+            margin: 0 !important; /*甚至不需要右边距，因为有 gap */
+            margin-top: 0 !important;
+        }
+
+        /* ✅ 关键修复：隐藏 "Twitter/Facebook" 这些文字标签 */
+        .contact-method .icons .label {
+            display: none !important; 
         }
     </style>
     </head>
