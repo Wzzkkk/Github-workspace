@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg">
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 	<style>
         /* 1. 布局修复：顶部对齐 */
