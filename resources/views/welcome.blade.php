@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Forty by HTML5 UP</title>
+		<title>Blog by ZWWKKK UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
@@ -136,6 +136,7 @@
 						<div class="inner">
 							<section>
 								<form method="post" action="/guestbook">
+                                    @csrf
                                     <div class="fields">
                                         <div class="field">
                                             <label for="name">你的名字</label>
