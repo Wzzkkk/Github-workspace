@@ -19,3 +19,7 @@ Route::get('/guestbook', [MessageController::class, 'index']);
 // 提交留言的动作
 Route::post('/guestbook', [MessageController::class, 'store']);
 
+use App\Http\Controllers\DeployController;
+
+// 自动化部署接口
+Route::post('/deploy-webhook', [DeployController::class, 'deploy']);
