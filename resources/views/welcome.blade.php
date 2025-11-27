@@ -59,6 +59,29 @@
             display: block !important;
             line-height: 1.5 !important;
         }
+        /* ✅ 新增：让搬家后的图标排版更漂亮 */
+        .contact-method .icons {
+            margin-top: 20px !important;  /* 和上面文字拉开距离 */
+            padding-left: 0 !important;   /* 去掉左边距 */
+            list-style: none !important;  /* 去掉前面的点 */
+            display: flex !important;     /* 横向排列 */
+            flex-wrap: wrap !important;   /* 自动换行 */
+            gap: 10px !important;         /* 图标之间的间距 */
+        }
+        
+        .contact-method .icons li {
+            padding: 0 !important;
+            border: none !important;
+        }
+        
+        /* 稍微缩小一点图标，适应紧凑布局 */
+        .contact-method .icons .icon {
+            width: 36px !important;
+            height: 36px !important;
+            line-height: 36px !important;
+            font-size: 1em !important;
+            margin-right: 0 !important; /* 由 gap 控制间距 */
+        }
     </style>
     </head>
 	<body class="is-preload">
@@ -216,17 +239,10 @@
                                 <div class="contact-method">
                                     <span class="icon solid alt fa-home"></span>
                                     <div>
-                                    <h3>关于本站</h3>
-                                    <span>这是一个使用 Laravel + Forty 模板<br />
-                                    构建的全栈个人网站。</span>
-                                    </div>
-                                </div>
-                            </section>
-                        </section>
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
+                                        <h3>关于本站</h3>
+                                        <span>这是一个使用 Laravel + Forty 模板<br />
+                                        构建的全栈个人网站。</span>
+                                        <ul class="icons">
 								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
@@ -236,6 +252,14 @@
 							<ul class="copyright">
 								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
 						</div>
 					</footer>
 
