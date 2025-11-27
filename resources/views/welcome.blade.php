@@ -89,6 +89,36 @@
         .contact-method .icons .label {
             display: none !important; 
         }
+        .contact-method .icons {
+            margin: 15px 0 0 0 !important; /* 与上方文字拉开距离 */
+            padding: 0 !important;
+            list-style: none !important;
+            display: flex !important;      /* 横向排列 */
+            flex-wrap: nowrap !important;  /* ⚠️ 强制不换行，都在一行显示 */
+            gap: 8px !important;           /* 稍微减小间距，确保放得下 */
+        }
+
+        .contact-method .icons li {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+            flex-shrink: 0 !important;     /* 防止图标被挤压 */
+        }
+
+        /* 统一图标大小 */
+        .contact-method .icons .icon {
+            width: 32px !important;
+            height: 32px !important;
+            line-height: 32px !important;
+            font-size: 0.9em !important;
+            margin: 0 !important;
+            margin-top: 0 !important;
+        }
+        
+        /* 再次确保标签隐藏 */
+        .contact-method .icons .label {
+            display: none !important;
+        }
     </style>
     </head>
 	<body class="is-preload">
@@ -244,23 +274,21 @@
                             </section>
                             <section>
                                 <div class="contact-method">
-                                    <span class="icon solid alt fa-home"></span>
-                                    <div>
-                                        <h3>关于本站</h3>
-                                        <span>这是一个使用 Laravel + Forty 模板<br />
-                                        构建的全栈个人网站。</span>
-                                        <ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-                                    </div>
-                                </div>
+    <span class="icon solid alt fa-home"></span>
+    <div>
+        <h3>关于本站</h3>
+        <span>这是一个使用 Laravel + Forty 模板<br />
+        构建的全栈个人网站。</span>
+        
+        <ul class="icons">
+            <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        </div>
+</div>
                             </section>
                         </section>
 				<!-- Footer -->
