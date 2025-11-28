@@ -53,7 +53,7 @@
             display: block !important;
             line-height: 1.5 !important;
         }
-        
+
         /* 4. 优化“社交媒体图标”布局 */
         .split section .icons li {
             padding: 0 !important;
@@ -72,6 +72,36 @@
         }
         
         .split section .icons .label { display: none !important; }
+
+        .social-wrapper {
+            margin-top: 30px !important;    /* 距离上方内容 30px */
+            padding-top: 30px !important;   /* 图标距离线条 30px */
+            border-top: 1px solid rgba(212, 212, 255, 0.1) !important; /* 长长的分割线 */
+            width: 100% !important;         /* 强制占满整行宽度 */
+        }
+
+        /* 图标排列 */
+        .social-wrapper .icons {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 15px !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            list-style: none !important;
+        }
+
+        /* 修复图标大小和样式 */
+        .social-wrapper .icon {
+            width: 36px !important;
+            height: 36px !important;
+            line-height: 36px !important;
+            text-align: center !important;
+            font-size: 1em !important;
+            border-bottom: none !important;
+            margin: 0 !important;
+        }
+        
+        .social-wrapper .label { display: none !important; }
     </style>
     </head>
 <body class="is-preload">
