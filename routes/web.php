@@ -46,7 +46,10 @@ Route::get('/music', function () {
     return view('music');
 });
 
-
+// ✅ 必须有这一行，相册才能打开
+Route::get('/gallery', function () {
+    return view('gallery');
+});
 
 
 
