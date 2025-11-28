@@ -27,14 +27,14 @@
                 </header>
             </article>
             <article>
-                <span class="image">
-                    <img src="/images/pic02.jpg" alt="" />
-                </span>
-                <header class="major">
-                    <h3><a href="/guestbook" class="link">留言板</a></h3>
-                    <p>欢迎留下你的足迹</p>
-                </header>
-            </article>
+    			<span class="image">
+        			<img src="/images/pic02.jpg" alt="" />
+    			</span>
+    			<header class="major">
+        			<h3><a href="/music" class="link">双声道音乐</a></h3>
+        			<p>体验 Web Audio API 的魅力</p>
+    			</header>
+			</article>
             <article>
                 <span class="image">
                     <img src="/images/pic03.jpg" alt="" />

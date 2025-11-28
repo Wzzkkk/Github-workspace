@@ -41,7 +41,10 @@ Route::get('/projects', function () {
     return view('projects');
 });
 
-
+// 音乐播放器页面
+Route::get('/music', function () {
+    return view('music');
+});
 
 
 
