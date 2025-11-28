@@ -10,17 +10,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        .contact-method { display: flex !important; flex-direction: row !important; align-items: flex-start !important; padding-left: 0 !important; margin-bottom: 40px !important; border: none !important; }
-        .contact-method .icon { position: static !important; margin-right: 20px !important; width: 48px !important; height: 48px !important; line-height: 48px !important; text-align: center !important; font-size: 1.2em !important; background-color: #ffffff !important; color: #242943 !important; border-radius: 50% !important; flex-shrink: 0 !important; margin-top: 5px !important; }
-        .contact-method > div { text-align: left !important; flex: 1 !important; }
-        .contact-method h3 { margin-bottom: 5px !important; color: #ffffff !important; }
-        .contact-method a, .contact-method span { color: rgba(255,255,255,0.7) !important; display: block !important; line-height: 1.5 !important; }
-        .contact-method .icons { margin: 15px 0 0 0 !important; padding: 0 !important; list-style: none !important; display: flex !important; flex-wrap: wrap !important; gap: 10px !important; }
-        .contact-method .icons li { padding: 0 !important; margin: 0 !important; border: none !important; }
-        .contact-method .icons .icon { width: 32px !important; height: 32px !important; line-height: 32px !important; font-size: 0.9em !important; margin: 0 !important; margin-top: 0 !important; }
-        .contact-method .icons .label { display: none !important; }
+        /* 1. 修复：底部“联系方式” (Email/About) 布局 */
+        .contact-method {
+            display: flex !important;           /* 强制使用弹性布局 */
+            flex-direction: row !important;     /* 强制横向排列 */
+            align-items: flex-start !important; /* 顶部对齐 */
+            margin-bottom: 40px !important;     /* 增加间距 */
+            padding-left: 0 !important;         /* 去除左边距 */
+            border: none !important;            /* 去除边框 */
+        }
+
+        /* 2. 重塑左侧图标 (白色圆圈) */
+        .contact-method .icon {
+            position: static !important;        /* 核心：取消绝对定位 */
+            width: 48px !important;
+            height: 48px !important;
+            line-height: 48px !important;
+            text-align: center !important;
+            font-size: 1.2em !important;
+            margin-right: 20px !important;      /* 与右侧文字的距离 */
+            margin-top: 5px !important;         /* 微调垂直位置 */
+            background-color: #ffffff !important;
+            color: #242943 !important;
+            border-radius: 50% !important;
+            flex-shrink: 0 !important;          /* 防止挤压 */
+        }
+
+        /* 3. 修复右侧文字区域 */
+        .contact-method > div {
+            text-align: left !important;
+            flex: 1 !important;
+        }
+        
+        .contact-method h3 {
+            margin-bottom: 5px !important;
+            color: #ffffff !important;
+        }
+        
+        .contact-method a, 
+        .contact-method span {
+            color: rgba(255,255,255,0.7) !important;
+            display: block !important;
+            line-height: 1.5 !important;
+        }
+
+        /* 4. ✅ 新增：针对独立出来的社交图标栏进行排版 */
+        .split section .icons {
+            margin-top: 30px !important;   /* 和上面的大块拉开距离 */
+            padding-left: 0 !important;    /* 靠左对齐 */
+            list-style: none !important;   /* 去掉前面的点 */
+            display: flex !important;      /* 横向排列 */
+            flex-wrap: wrap !important;    /* 自动换行 */
+            gap: 12px !important;          /* 图标间距 */
+        }
+
+        .split section .icons li {
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+        }
+
+        .split section .icons .icon {
+            width: 36px !important;
+            height: 36px !important;
+            line-height: 36px !important;
+            font-size: 1em !important;
+            margin: 0 !important;
+        }
+        
+        /* 隐藏标签文字 (Twitter/Facebook) */
+        .split section .icons .label { display: none !important; }
     </style>
-</head>
+    </head>
 <body class="is-preload">
 
     <div id="wrapper">
@@ -37,7 +98,7 @@
                 <li><a href="/">首页</a></li>
                 <li><a href="/about">关于我</a></li>
                 <li><a href="/projects">我的项目</a></li>
-                <li><a href="/guestbook">留言板</a></li>
+                <li><a href="/gallery">我的相册</a></li> <li><a href="/music">双声道音乐</a></li> <li><a href="/guestbook">留言板</a></li>
             </ul>
             <ul class="actions stacked">
                 @if(session('is_admin'))

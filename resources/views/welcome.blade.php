@@ -101,23 +101,22 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="contact-method">
-                        <span class="icon solid alt fa-home"></span>
-                        <div>
-                            <h3>关于本站</h3>
-                            <span>这是一个使用 Laravel + Forty 模板<br />
-                            构建的全栈个人网站。</span>
-                            
-                            <ul class="icons">
-                                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                	<section>
+    					<div class="contact-method">
+        					<span class="icon solid alt fa-home"></span>
+       						<div>
+            					<h3>关于本站</h3>
+            					<span>这是一个使用 Laravel + Forty 模板<br />
+            					构建的全栈个人网站。</span>
+        					</div>
+    					</div> 
+								<ul class="icons">
+        						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+        						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+        						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+        						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        					</ul>
+					</section>
             </section>
         </div>
     </section>
