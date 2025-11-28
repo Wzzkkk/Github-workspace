@@ -53,21 +53,8 @@
             display: block !important;
             line-height: 1.5 !important;
         }
-
-       /* ✅ 简化版：只负责排版，不画线了 (线交给 hr 标签) */
-        .split section .icons {
-            margin-top: 0 !important;      /* 紧贴着 hr 标签 */
-            padding-top: 20px !important;  /* 给图标留点呼吸空间 */
-            padding-left: 0 !important;
-            
-            width: 100% !important;
-            display: flex !important;
-            flex-wrap: wrap !important;
-            gap: 15px !important;
-            list-style: none !important;
-            border: none !important;       /* ❌ 删掉边框，防止双重线 */
-        }
-
+        
+        /* 4. 优化“社交媒体图标”布局 */
         .split section .icons li {
             padding: 0 !important;
             margin: 0 !important;

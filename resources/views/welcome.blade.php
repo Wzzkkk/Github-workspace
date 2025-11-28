@@ -102,22 +102,26 @@
                     </div>
                 </section>
                 	<section>
-    					<div class="contact-method">
-        					<span class="icon solid alt fa-home"></span>
-       						<div>
-            					<h3>关于本站</h3>
-            					<span>这是一个使用 Laravel + Forty 模板<br />
-            					构建的全栈个人网站。</span>
-        					</div>
-                            <hr />
-    					</div> 
-								<ul class="icons">
-        						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-        						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-        						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-        						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-        					</ul>
-					</section>
+                        <div class="contact-method">
+                            <span class="icon solid alt fa-home"></span>
+                        <div>
+                            <h3>关于本站</h3>
+                            <span>这是一个使用 Laravel + Forty 模板<br />
+                            构建的全栈个人网站。</span>
+                        </div>
+                        </div>
+    
+                        <div class="contact-method" style="margin-top: 0; border-top: 1px solid rgba(212, 212, 255, 0.1); padding-top: 30px;">
+                            <span class="icon solid alt fa-comment"></span> <div>
+                                <h3>社交媒体</h3> <ul class="icons" style="margin: 0; padding: 0;">
+                                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
             </section>
         </div>
     </section>
