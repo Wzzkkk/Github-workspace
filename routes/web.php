@@ -36,7 +36,10 @@ Route::get('/logout', [MessageController::class, 'logout']);
 // 删除留言 (注意这里用了 {id} 来代表要删哪一条)
 Route::delete('/guestbook/{id}', [MessageController::class, 'destroy']);
 
-
+// 项目经历页面
+Route::get('/projects', function () {
+    return view('projects');
+});
 
 
 

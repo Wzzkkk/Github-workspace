@@ -189,13 +189,13 @@
 									</header>
 								</article>
 								<article>
-									<span class="image">
-										<img src="/images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
+    								<span class="image">
+        								<img src="/images/pic03.jpg" alt="" />
+    								</span>
+    							<header class="major">
+       								<h3><a href="/projects" class="link">我的项目</a></h3>
+       								<p>这里记录了我的折腾历程</p>
+    							</header>
 								</article>
 								<article>
 									<span class="image">
