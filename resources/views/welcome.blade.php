@@ -27,14 +27,14 @@
                 </header>
             </article>
             <article>
-    			<span class="image">
-        			<img src="/images/pic02.jpg" alt="" />
-    			</span>
-    			<header class="major">
-        			<h3><a href="/music" class="link">双声道音乐</a></h3>
-        			<p>体验 Web Audio API 的魅力</p>
-    			</header>
-			</article>
+                <span class="image">
+                    <img src="/images/pic02.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="/music" class="link">双声道音乐</a></h3>
+                    <p>体验 Web Audio API 的魅力</p>
+                </header>
+            </article>
             <article>
                 <span class="image">
                     <img src="/images/pic03.jpg" alt="" />
@@ -49,8 +49,8 @@
                     <img src="/images/pic04.jpg" alt="" />
                 </span>
                 <header class="major">
-                    <h3><a href="#" class="link">更多功能</a></h3>
-                    <p>正在开发中...</p>
+                    <h3><a href="/gallery" class="link">我的相册</a></h3>
+                    <p>查看我拍摄的精彩瞬间</p>
                 </header>
             </article>
         </section>
@@ -92,36 +92,38 @@
             </section>
             
             <section class="split">
-    <section>
-        <div class="contact-method">
-            <span class="icon solid alt fa-envelope"></span>
-            <div>
-                <h3>Email</h3>
-                <a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
-            </div>
-        </div>
-    </section>
+                
+                <section>
+                    <div class="contact-method">
+                        <span class="icon solid alt fa-envelope"></span>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:admin@zwk369.me">admin@zwk369.me</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="contact-method">
+                        <span class="icon solid alt fa-home"></span>
+                        <div>
+                            <h3>关于本站</h3>
+                            <span>这是一个使用 Laravel + Forty 模板<br />
+                            构建的全栈个人网站。</span>
+                        </div>
+                    </div>
+                </section>
 
-    <section>
-        <div class="contact-method">
-            <span class="icon solid alt fa-home"></span>
-            <div>
-                <h3>关于本站</h3>
-                <span>这是一个使用 Laravel + Forty 模板<br />
-                构建的全栈个人网站。</span>
-            </div>
-        </div>
+                <section style="padding-top: 20px; border-top: 1px solid rgba(212, 212, 255, 0.1);">
+                    <ul class="icons" style="margin: 0; padding: 0;">
+                        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
 
-        <div class="social-wrapper" style="margin-top: 40px;"> <ul class="icons">
-                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </div>
-    </section>
-</section>
             </section>
-        </div>
+            </div>
     </section>
 </x-layout>
