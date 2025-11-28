@@ -4,6 +4,7 @@
     <title>{{ $title ?? 'Wzzkkk 的个人网站' }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
     <link rel="stylesheet" href="/assets/css/main.css" />
     <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
     
@@ -54,33 +55,14 @@
             line-height: 1.5 !important;
         }
 
-        /* 4. 优化“社交媒体图标”布局 */
-        .split section .icons li {
-            padding: 0 !important;
-            margin: 0 !important;
-            border: none !important;
-        }
-
-        .split section .icons .icon {
-            width: 36px !important;
-            height: 36px !important;
-            line-height: 36px !important;
-            font-size: 1em !important;
-            margin: 0 !important;
-            
-            margin-top: 15px !important; /* ✨ 这里让图标稍微往下一点点 */
-        }
-        
-        .split section .icons .label { display: none !important; }
-
+        /* 4. ✅ 修复：独立的社交图标容器样式 (无分割线版) */
         .social-wrapper {
-            margin-top: 30px !important;    /* 距离上方内容 30px */
-            padding-top: 30px !important;   /* 图标距离线条 30px */
-            border-top: 1px solid rgba(212, 212, 255, 0.1) !important; /* 长长的分割线 */
-            width: 100% !important;         /* 强制占满整行宽度 */
+            margin-top: 40px !important;    /* 与上面的文字拉开距离 */
+            padding-top: 0 !important;
+            border-top: none !important;    /* ❌ 删掉分割线 */
+            width: 100% !important;
         }
 
-        /* 图标排列 */
         .social-wrapper .icons {
             display: flex !important;
             flex-wrap: wrap !important;
@@ -90,20 +72,24 @@
             list-style: none !important;
         }
 
-        /* 修复图标大小和样式 */
         .social-wrapper .icon {
             width: 36px !important;
             height: 36px !important;
             line-height: 36px !important;
             text-align: center !important;
             font-size: 1em !important;
-            border-bottom: none !important;
             margin: 0 !important;
+            border-bottom: none !important;
         }
         
         .social-wrapper .label { display: none !important; }
+
+        /* 5. 修复导航栏 */
+        #menu ul.links { list-style: none !important; padding: 0 !important; }
+        #menu ul.links li { border-top: 1px solid rgba(255,255,255,0.1) !important; padding: 0 !important; }
+        #menu ul.links li a { display: block !important; padding: 1em 0 !important; border: none !important; }
     </style>
-    </head>
+</head>
 <body class="is-preload">
 
     <div id="wrapper">
@@ -120,7 +106,9 @@
                 <li><a href="/">首页</a></li>
                 <li><a href="/about">关于我</a></li>
                 <li><a href="/projects">我的项目</a></li>
-                <li><a href="/gallery">我的相册</a></li> <li><a href="/music">双声道音乐</a></li> <li><a href="/guestbook">留言板</a></li>
+                <li><a href="/gallery">我的相册</a></li>
+                <li><a href="/music">双声道音乐</a></li>
+                <li><a href="/guestbook">留言板</a></li>
             </ul>
             <ul class="actions stacked">
                 @if(session('is_admin'))
