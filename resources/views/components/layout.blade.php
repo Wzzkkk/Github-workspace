@@ -57,19 +57,22 @@
         /* 4. ✅ 新增：针对独立出来的社交图标栏进行排版 */
         /* ✅ 修改：增加分割线和位移 */
         /* ✅ 修改：让分割线变长 (占满整行) */
+       /* ✅ 精准修正版：全宽分割线 */
         .split section .icons {
-            width: 100% !important;         /* ✨ 关键：强制宽度占满容器 */
+            width: 100% !important;
             
-            margin-top: 25px !important;
-            padding-top: 25px !important;
+            margin-top: 30px !important;
+            padding-top: 30px !important;
+            
+            /* 使用 Forty 模板标准的分割线颜色 */
             border-top: 1px solid rgba(212, 212, 255, 0.1) !important;
             
-            padding-left: 0 !important;     /* ✨ 还原左边距，让线从最左边开始延伸 */
+            padding-left: 0 !important;     /* 确保线从最左边开始 */
             
-            list-style: none !important;
             display: flex !important;
             flex-wrap: wrap !important;
             gap: 15px !important;
+            list-style: none !important;
         }
 
         .split section .icons li {
