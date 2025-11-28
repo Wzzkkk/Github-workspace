@@ -109,6 +109,7 @@
             					<span>这是一个使用 Laravel + Forty 模板<br />
             					构建的全栈个人网站。</span>
         					</div>
+                            <hr />
     					</div> 
 								<ul class="icons">
         						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>

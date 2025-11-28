@@ -54,25 +54,18 @@
             line-height: 1.5 !important;
         }
 
-        /* 4. ✅ 新增：针对独立出来的社交图标栏进行排版 */
-        /* ✅ 修改：增加分割线和位移 */
-        /* ✅ 修改：让分割线变长 (占满整行) */
-       /* ✅ 精准修正版：全宽分割线 */
+       /* ✅ 简化版：只负责排版，不画线了 (线交给 hr 标签) */
         .split section .icons {
+            margin-top: 0 !important;      /* 紧贴着 hr 标签 */
+            padding-top: 20px !important;  /* 给图标留点呼吸空间 */
+            padding-left: 0 !important;
+            
             width: 100% !important;
-            
-            margin-top: 30px !important;
-            padding-top: 30px !important;
-            
-            /* 使用 Forty 模板标准的分割线颜色 */
-            border-top: 1px solid rgba(212, 212, 255, 0.1) !important;
-            
-            padding-left: 0 !important;     /* 确保线从最左边开始 */
-            
             display: flex !important;
             flex-wrap: wrap !important;
             gap: 15px !important;
             list-style: none !important;
+            border: none !important;       /* ❌ 删掉边框，防止双重线 */
         }
 
         .split section .icons li {
