@@ -55,13 +55,18 @@
         }
 
         /* 4. ✅ 新增：针对独立出来的社交图标栏进行排版 */
+        /* ✅ 修改：增加分割线和位移 */
         .split section .icons {
-            margin-top: 30px !important;   /* 和上面的大块拉开距离 */
-            padding-left: 0 !important;    /* 靠左对齐 */
-            list-style: none !important;   /* 去掉前面的点 */
-            display: flex !important;      /* 横向排列 */
-            flex-wrap: wrap !important;    /* 自动换行 */
-            gap: 12px !important;          /* 图标间距 */
+            margin-top: 25px !important;    /* 稍微拉近一点距离，给分割线留位置 */
+            padding-top: 25px !important;   /* 分割线和图标的距离 */
+            border-top: 1px solid rgba(255, 255, 255, 0.2) !important; /* ✨ 这里就是那条分割线 */
+            
+            padding-left: 20px !important;  /* ✨ 往右位移 20px */
+            
+            list-style: none !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 15px !important;           /* 稍微增加图标间距，更大气 */
         }
 
         .split section .icons li {
@@ -76,9 +81,10 @@
             line-height: 36px !important;
             font-size: 1em !important;
             margin: 0 !important;
+            
+            margin-top: 5px !important; /* ✨ 这里让图标稍微往下一点点 */
         }
         
-        /* 隐藏标签文字 (Twitter/Facebook) */
         .split section .icons .label { display: none !important; }
     </style>
     </head>
